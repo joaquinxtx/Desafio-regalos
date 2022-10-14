@@ -1,0 +1,80 @@
+.list-container {
+	width: 500px;
+	box-shadow: var(--3d-box-shadow);
+	border-radius: 10px;
+	padding: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -56%);
+	background-color: #FFF;
+}
+
+.list-container h1 {
+	font-size: 30px;
+}
+
+.title-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.gift-list {
+	margin: 20px 0;
+	padding-right: 15px;
+	max-height: 47vh;
+	overflow-y: auto;
+}
+
+.gift-list li {
+	list-style: none;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.gift-list li:last-child {
+	margin-bottom: 0;
+}
+
+.btn-add-gift {
+	width: 100%;
+}
+
+.no-gifts-text {
+	text-align: center;
+	margin: 25px 0;
+}
+
+.total-price {
+	display: block;
+	text-align: center;
+	border-top: 1px solid rgba(0, 0, 0, 0.3);
+	padding-top: 15px;
+}
+
+.song-icon {
+	font-size: 30px;
+	cursor: pointer;
+	user-select: none;
+}
+
+.bottom-btn-container {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+
+@media screen and (max-width: 530px) {
+	.list-container {
+		width: 95%;
+		transform: translate(-50%, -50%);
+	}
+
+	.gift-list {
+		max-height: 40vh;
+	}
+}
