@@ -99,6 +99,8 @@ export const GiftForm = (props) => {
 							<BiErrorCircle />
 							<small>Completa este campo</small>
 						</div>
+
+						
 					}
 				</div>
 
